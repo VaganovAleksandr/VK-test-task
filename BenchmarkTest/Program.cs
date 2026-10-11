@@ -37,7 +37,7 @@ namespace WukongBenchmarkAutomation
                 }
             }
 
-            using (var searcher = new ManagementObjectSearcher("SELECT TotalPhysicsMemory FROM Win32_ComputerSystem"))
+            using (var searcher = new ManagementObjectSearcher("SELECT TotalPhysicalMemory FROM Win32_ComputerSystem"))
             {
                 foreach (var obj in searcher.Get())
                 {
